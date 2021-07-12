@@ -12,7 +12,6 @@ import {
   WETH9 as WETH,
 } from '../src'
 
-
 import JSBI from 'jsbi'
 
 describe('Trade', () => {

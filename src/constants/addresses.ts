@@ -7,7 +7,7 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x8C4999d3dC5930c1156b0483a23Cc27eBDe3AF25', // TODO: UPDATE (6 JUL)
+  [ChainId.FANTOM_TESTNET]: '0xD648477c22997E94e52a6Cb666fA0B91c44ed185', // TODO: UPDATE (6 JUL)
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -34,7 +34,7 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xAA8D7795593E0103a3093475074D46d3948B7bB1', // TODO: UPDATE (6 JUL)
+  [ChainId.FANTOM_TESTNET]: '0xAf34910C47f372f629e91C53B9dBFdC288cF423f', // TODO: UPDATE (6 JUL)
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -334,17 +334,10 @@ export const SOULSWAP_MULTI_EXACT_SWAPPER_ADDRESS = {
   [ChainId.CELO]: '',
 }
 
-export const PEGGED_ORACLE_ADDRESS =
-  ''
-
-export const SOULSWAP_TWAP_0_ORACLE_ADDRESS =
-  ''
-
-export const SOULSWAP_TWAP_1_ORACLE_ADDRESS =
-  ''
-
-export const CHAINLINK_ORACLE_ADDRESS =
-  ''
+export const PEGGED_ORACLE_ADDRESS = ''
+export const SOULSWAP_TWAP_0_ORACLE_ADDRESS = ''
+export const SOULSWAP_TWAP_1_ORACLE_ADDRESS = ''
+export const CHAINLINK_ORACLE_ADDRESS = ''
 
 export const BORING_HELPER_ADDRESS = {
   [ChainId.MAINNET]: '',

@@ -46,8 +46,8 @@ export class Pair {
       tokenAmounts[0].currency.chainId,
       Pair.getAddress(tokenAmounts[0].currency, tokenAmounts[1].currency),
       18,
-      'UNI-V2',
-      'Uniswap V2'
+      'SOUL-LP',
+      'SoulSwap LP'
     )
     this.tokenAmounts = tokenAmounts as [
       CurrencyAmount<Token>,
@@ -76,9 +76,6 @@ export class Pair {
     )
   }
 
-  /**
-   * Returns the current mid price of the pair in terms of token1, i.e. the ratio of reserve0 to reserve1
-   */
   public get token1Price(): Price<Token, Token> {
     const result = this.tokenAmounts[0].divide(this.tokenAmounts[1])
     return new Price(
@@ -89,26 +86,17 @@ export class Pair {
     )
   }
 
-  /**
-   * Return the price of the given token in terms of the other token in the pair.
-   * @param token token to return price of
-   */
   public priceOf(token: Token): Price<Token, Token> {
     invariant(this.involvesToken(token), 'TOKEN')
     return token.equals(this.token0) ? this.token0Price : this.token1Price
   }
 
-  /**
-   * Returns the chain ID of the tokens in the pair.
-   */
   public get chainId(): number {
     return this.token0.chainId
   }
-
   public get token0(): Token {
     return this.tokenAmounts[0].currency
   }
-
   public get token1(): Token {
     return this.tokenAmounts[1].currency
   }
@@ -116,7 +104,6 @@ export class Pair {
   public get reserve0(): CurrencyAmount<Token> {
     return this.tokenAmounts[0]
   }
-
   public get reserve1(): CurrencyAmount<Token> {
     return this.tokenAmounts[1]
   }
@@ -130,12 +117,14 @@ export class Pair {
     inputAmount: CurrencyAmount<Token>
   ): [CurrencyAmount<Token>, Pair] {
     invariant(this.involvesToken(inputAmount.currency), 'TOKEN')
+
     if (
       JSBI.equal(this.reserve0.quotient, ZERO) ||
       JSBI.equal(this.reserve1.quotient, ZERO)
     ) {
       throw new InsufficientReservesError()
     }
+
     const inputReserve = this.reserveOf(inputAmount.currency)
     const outputReserve = this.reserveOf(
       inputAmount.currency.equals(this.token0) ? this.token1 : this.token0
@@ -150,6 +139,7 @@ export class Pair {
       inputAmount.currency.equals(this.token0) ? this.token1 : this.token0,
       JSBI.divide(numerator, denominator)
     )
+
     if (JSBI.equal(outputAmount.quotient, ZERO)) {
       throw new InsufficientInputAmountError()
     }
@@ -166,6 +156,7 @@ export class Pair {
     outputAmount: CurrencyAmount<Token>
   ): [CurrencyAmount<Token>, Pair] {
     invariant(this.involvesToken(outputAmount.currency), 'TOKEN')
+
     if (
       JSBI.equal(this.reserve0.quotient, ZERO) ||
       JSBI.equal(this.reserve1.quotient, ZERO) ||

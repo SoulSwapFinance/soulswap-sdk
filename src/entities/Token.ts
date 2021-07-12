@@ -142,6 +142,14 @@ export const WETH9: { [chainId: number]: Token } = {
     'Wrapped Ether'
   ),
 
+  [ChainId.FANTOM_TESTNET]: new Token(
+    ChainId.FANTOM_TESTNET,
+    '0x02132A1Fa3BCe27CF77e6323553be8651848375e',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+
   [ChainId.MATIC]: new Token(
     ChainId.MATIC,
     '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
