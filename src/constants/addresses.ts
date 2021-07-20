@@ -115,7 +115,7 @@ export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xB89677EfafF77538dfb131A2e137f712F8C90655', // 20 JUL
+  [ChainId.FANTOM_TESTNET]: '0x5cED956c0d3dC88B8C3E42494F7b2e052d7CfeBc', // 20 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -142,7 +142,7 @@ export const SOULVAULT_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x5C44AA29B255C6f5c1B3135A04931422a2AC301B', // 20 JUL
+  [ChainId.FANTOM_TESTNET]: '0xfCeCfa644E796A1E3B8136dA87EBfb2e00Cc992E', // 20 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
