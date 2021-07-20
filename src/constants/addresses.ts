@@ -61,7 +61,7 @@ export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x701D8b35Bc0857a3D2fACf7EF8a739CFEBbd1Cd7', // 18 JUL
+  [ChainId.FANTOM_TESTNET]: '0xfF84964E7A446466669da84be6c72Fe10eA786cF', // 20 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -88,7 +88,7 @@ export const SEANCE_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xf9D9b96F213aCC6434f16fff5D932FA85cD179f3', // 6 JUL
+  [ChainId.FANTOM_TESTNET]: '0x3E3887680e6E81e4Da8C019Ef56a704297eCE211', // 20 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -115,7 +115,7 @@ export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xfc20802f62450a40c71c541965d98adc3e648495', // 18 JUL
+  [ChainId.FANTOM_TESTNET]: '0xB89677EfafF77538dfb131A2e137f712F8C90655', // 20 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -142,7 +142,34 @@ export const SOULVAULT_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xB352B4c869E99774c7D6260287DD93ef5fAD5056', // 18 JUL
+  [ChainId.FANTOM_TESTNET]: '0x5C44AA29B255C6f5c1B3135A04931422a2AC301B', // 20 JUL
+  [ChainId.MATIC]: '',
+  [ChainId.MATIC_TESTNET]: '',
+  [ChainId.XDAI]: '',
+  [ChainId.BSC]: '',
+  [ChainId.BSC_TESTNET]: '',
+  [ChainId.ARBITRUM]: '',
+  [ChainId.ARBITRUM_TESTNET]: '',
+  [ChainId.MOONBEAM_TESTNET]: '',
+  [ChainId.AVALANCHE]: '',
+  [ChainId.AVALANCHE_TESTNET]: '',
+  [ChainId.HECO]: '',
+  [ChainId.HECO_TESTNET]: '',
+  [ChainId.HARMONY]: '',
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.OKEX]: '',
+  [ChainId.OKEX_TESTNET]: '',
+  [ChainId.CELO]: '',
+}
+
+export const SOUSCHEF_ADDRESS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.ROPSTEN]: '',
+  [ChainId.RINKEBY]: '',
+  [ChainId.GÖRLI]: '',
+  [ChainId.KOVAN]: '',
+  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM_TESTNET]: '0x814Ae6f31F3f8FdEBeeD4b496e673eb87310755E', // 20 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
