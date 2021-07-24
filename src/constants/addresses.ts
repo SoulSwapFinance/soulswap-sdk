@@ -81,14 +81,14 @@ export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
 }
 
-export const SEANCE_ADDRESS: { [chainId in ChainId]: string } = {
+export const SPELL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x3E3887680e6E81e4Da8C019Ef56a704297eCE211', // 20 JUL
+  [ChainId.FANTOM_TESTNET]: '0xb5083b964a0B6A447564657285AeE1E76524B3Db', // 24 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -142,7 +142,7 @@ export const SOULVAULT_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xfCeCfa644E796A1E3B8136dA87EBfb2e00Cc992E', // 20 JUL
+  [ChainId.FANTOM_TESTNET]: '0x2d444D507030469693e5a869421fBC89A7EEf67A', // 24 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
