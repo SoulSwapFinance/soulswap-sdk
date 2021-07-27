@@ -108,14 +108,14 @@ export const SPELL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
 }
 
-export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
+export const SOUL_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x5cED956c0d3dC88B8C3E42494F7b2e052d7CfeBc', // 20 JUL
+  [ChainId.FANTOM_TESTNET]: '0x5cED956c0d3dC88B8C3E42494F7b2e052d7CfeBc', // OLD UPDATE
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -162,7 +162,7 @@ export const SOULVAULT_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
 }
 
-export const SOUSCHEF_ADDRESS: { [chainId in ChainId]: string } = {
+export const SOUS_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
@@ -245,7 +245,7 @@ export const TIMELOCK_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.CELO]: '',
 }
 
-export const BENTOBOX_ADDRESS: {
+export const COFFIN_BOX_ADDRESS: {
   [chainId in ChainId]: string
 } = {
   [ChainId.MAINNET]: '',
@@ -390,19 +390,20 @@ export const SOULSWAP_MULTI_EXACT_SWAPPER_ADDRESS = {
   [ChainId.CELO]: '',
 }
 
-export const PEGGED_ORACLE_ADDRESS = ''
-export const SOULSWAP_TWAP_0_ORACLE_ADDRESS = ''
-export const SOULSWAP_TWAP_1_ORACLE_ADDRESS = ''
-export const CHAINLINK_ORACLE_ADDRESS = ''
+// TODO: update oracles
+export const PEGGED_ORACLE_ADDRESS = '0x6cbfbB38498Df0E1e7A4506593cDB02db9001564'
+export const SOULSWAP_TWAP_0_ORACLE_ADDRESS = '0x66F03B0d30838A3fee971928627ea6F59B236065'
+export const SOULSWAP_TWAP_1_ORACLE_ADDRESS = '0x0D51b575591F8f74a2763Ade75D3CDCf6789266f'
+export const CHAINLINK_ORACLE_ADDRESS = '0x00632CFe43d8F9f8E6cD0d39Ffa3D4fa7ec73CFB'
 
-export const BORING_HELPER_ADDRESS = {
+export const SOUL_GUIDE_ADDRESS = {
   [ChainId.MAINNET]: '',
   [ChainId.ROPSTEN]: '',
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '',
+  [ChainId.FANTOM_TESTNET]: '0x5A6B3Ce2736E9B731Fba73262884016b50c39184',
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
