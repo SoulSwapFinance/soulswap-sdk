@@ -61,7 +61,34 @@ export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xfF84964E7A446466669da84be6c72Fe10eA786cF', // 20 JUL
+  [ChainId.FANTOM_TESTNET]: '0xBa6204f47b4Db2a22D7C4227569cEa3C8aD448DC', // 28 JUL
+  [ChainId.MATIC]: '',
+  [ChainId.MATIC_TESTNET]: '',
+  [ChainId.XDAI]: '',
+  [ChainId.BSC]: '',
+  [ChainId.BSC_TESTNET]: '',
+  [ChainId.ARBITRUM]: '',
+  [ChainId.ARBITRUM_TESTNET]: '',
+  [ChainId.MOONBEAM_TESTNET]: '',
+  [ChainId.AVALANCHE]: '',
+  [ChainId.AVALANCHE_TESTNET]: '',
+  [ChainId.HECO]: '',
+  [ChainId.HECO_TESTNET]: '',
+  [ChainId.HARMONY]: '',
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.OKEX]: '',
+  [ChainId.OKEX_TESTNET]: '',
+  [ChainId.CELO]: '',
+}
+
+export const SEANCE_ADDRESS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.ROPSTEN]: '',
+  [ChainId.RINKEBY]: '',
+  [ChainId.GÖRLI]: '',
+  [ChainId.KOVAN]: '',
+  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM_TESTNET]: '0xba34A07d0282A023e08ceb6098E59dFBEbE9f1E1', // 28 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -88,7 +115,7 @@ export const SPELL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xb5083b964a0B6A447564657285AeE1E76524B3Db', // 24 JUL
+  [ChainId.FANTOM_TESTNET]: '0x399e4510941E94429bF282BEc540300476B8A8Fb', // 28 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -115,7 +142,7 @@ export const SOUL_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x5cED956c0d3dC88B8C3E42494F7b2e052d7CfeBc', // OLD UPDATE
+  [ChainId.FANTOM_TESTNET]: '0xd18dEfcd37cD4BbA23287611DC48a116CB127E27', // 28 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -142,7 +169,7 @@ export const SOULVAULT_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x2d444D507030469693e5a869421fBC89A7EEf67A', // 24 JUL
+  [ChainId.FANTOM_TESTNET]: '0x0F76C3372A9b572C964425C0ad82b8899D8F3A68', // 28 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -169,7 +196,7 @@ export const SOUS_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x814Ae6f31F3f8FdEBeeD4b496e673eb87310755E', // 20 JUL
+  [ChainId.FANTOM_TESTNET]: '0x814Ae6f31F3f8FdEBeeD4b496e673eb87310755E', // 20 JUL (OUTDATED)
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
