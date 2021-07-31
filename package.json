@@ -1,7 +1,7 @@
 {
   "name": "@soulswap/sdk",
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "🛠 An SDK for building applications on top of SoulSwap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -23,10 +23,11 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
+    "@ethersproject/solidity": "^5.4.0",
+    "@soulswap/swap-core": "^0.0.3",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.1",
-    "soulswap-core": "^0.3.0",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3",
     "toformat": "^2.0.0"

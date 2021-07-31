@@ -61,7 +61,7 @@ export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xBa6204f47b4Db2a22D7C4227569cEa3C8aD448DC', // 28 JUL
+  [ChainId.FANTOM_TESTNET]: '0xCF174A6793FA36A73e8fF18A71bd81C985ef5aB5', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -88,7 +88,7 @@ export const SEANCE_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xba34A07d0282A023e08ceb6098E59dFBEbE9f1E1', // 28 JUL
+  [ChainId.FANTOM_TESTNET]: '0xD858E1a257Cb595Ba395520daD4c9C9592307734', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -115,7 +115,7 @@ export const SPELL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x399e4510941E94429bF282BEc540300476B8A8Fb', // 28 JUL
+  [ChainId.FANTOM_TESTNET]: '0xdFDC55e7E7eBA3E7BF2a0E0743f4D3C858FaC37E', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -142,7 +142,7 @@ export const SOUL_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xd18dEfcd37cD4BbA23287611DC48a116CB127E27', // 28 JUL
+  [ChainId.FANTOM_TESTNET]: '0xA65DbEA56E1E202bf03dB5f49ba565fb00Bf9288', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -169,7 +169,7 @@ export const SOULVAULT_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x0F76C3372A9b572C964425C0ad82b8899D8F3A68', // 28 JUL
+  [ChainId.FANTOM_TESTNET]: '0x1120e150dA9def6Fe930f4fEDeD18ef57c0CA7eF', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
@@ -430,7 +430,7 @@ export const SOUL_GUIDE_ADDRESS = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0x5A6B3Ce2736E9B731Fba73262884016b50c39184',
+  [ChainId.FANTOM_TESTNET]: '0x5A6B3Ce2736E9B731Fba73262884016b50c39184', // 27 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
