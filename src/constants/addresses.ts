@@ -88,7 +88,7 @@ export const SEANCE_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xD858E1a257Cb595Ba395520daD4c9C9592307734', // 31 JUL
+  [ChainId.FANTOM_TESTNET]: '0xD54Cf31D5653F4a062f5DA4C83170A5867d04442', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
