@@ -25,7 +25,7 @@ describe('computePairAddress', () => {
       tokenB,
     })
 
-    expect(result).toEqual('0xbCfFCD50d09095E48CC5ea02d564CAEe61aBc004')
+    expect(result).toEqual('0xFda04dfcf61faca294fFf1e9059fCaf7f4870870')
   })
   it('should give same result regardless of token order', () => {
     const USDC = new Token(
