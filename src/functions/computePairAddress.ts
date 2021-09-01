@@ -1,6 +1,5 @@
 import { keccak256, pack } from '@ethersproject/solidity'
 
-import { INIT_CODE_HASH } from '../constants'
 import { Token } from '../entities/Token'
 import { getCreate2Address } from '@ethersproject/address'
 
@@ -8,10 +7,12 @@ export const computePairAddress = ({
   factoryAddress,
   tokenA,
   tokenB,
+  codeHash
 }: {
   factoryAddress: string
   tokenA: Token
   tokenB: Token
+  codeHash: string
 }): string => {
   const [token0, token1] = tokenA.sortsBefore(tokenB)
     ? [tokenA, tokenB]
@@ -22,6 +23,6 @@ export const computePairAddress = ({
       ['bytes'],
       [pack(['address', 'address'], [token0.address, token1.address])]
     ),
-    INIT_CODE_HASH
+    codeHash
   )
 }

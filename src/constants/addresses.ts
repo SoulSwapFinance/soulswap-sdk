@@ -6,7 +6,7 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
-  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM]: '0x91c0d9987E1Ea80E94ca702b5B4906E6bbAb308C', // 1 SEP
   [ChainId.FANTOM_TESTNET]: '0xD648477c22997E94e52a6Cb666fA0B91c44ed185', // TODO: UPDATE (6 JUL)
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
@@ -33,7 +33,7 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.ROPSTEN]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
-  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM]: '0x994889A5a2BcfAB67e5242996e1331b74d777834', // 1 SEP
   [ChainId.FANTOM_TESTNET]: '0xAf34910C47f372f629e91C53B9dBFdC288cF423f', // TODO: UPDATE (6 JUL)
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
@@ -60,7 +60,7 @@ export const SOUL_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
-  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM]: '0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07', // 1 SEP
   [ChainId.FANTOM_TESTNET]: '0xCF174A6793FA36A73e8fF18A71bd81C985ef5aB5', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
