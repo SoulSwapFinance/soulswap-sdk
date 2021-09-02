@@ -7,7 +7,7 @@ export const computePairAddress = ({
   factoryAddress,
   tokenA,
   tokenB,
-  codeHash
+  codeHash,
 }: {
   factoryAddress: string
   tokenA: Token

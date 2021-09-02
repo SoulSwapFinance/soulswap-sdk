@@ -31,7 +31,7 @@ export class Pair {
       factoryAddress: FACTORY_ADDRESS[tokenA.chainId],
       tokenA,
       tokenB,
-      codeHash: INIT_CODE_HASH[tokenA.chainId]
+      codeHash: INIT_CODE_HASH[tokenA.chainId],
     })
   }
 
