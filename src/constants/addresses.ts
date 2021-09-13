@@ -142,7 +142,7 @@ export const SOUL_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
   [ChainId.FANTOM]: '',
-  [ChainId.FANTOM_TESTNET]: '0xA65DbEA56E1E202bf03dB5f49ba565fb00Bf9288', // 31 JUL
+  [ChainId.FANTOM_TESTNET]: '0x0d36535b2666959a52c0c73CB940A59b1EbE9FD6', // 13 SEP
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
   [ChainId.XDAI]: '',
