@@ -34,7 +34,7 @@ export const SPELL_ADDRESS: { [chainId in ChainId]: string } = {
 export const SOUL_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '',
   [ChainId.FANTOM]: '0xce6ccbB1EdAD497B4d53d829DF491aF70065AB5B', // 19 SEP
-  [ChainId.FANTOM_TESTNET]: '0x0d36535b2666959a52c0c73CB940A59b1EbE9FD6', // 13 SEP
+  [ChainId.FANTOM_TESTNET]: '0x70C6A37244feD0Fa4e4148D5ffe38a209dCEd714', // 19 SEP
 }
 
 export const SOULVAULT_ADDRESS: { [chainId in ChainId]: string } = {
@@ -78,8 +78,6 @@ export const KASHI_ADDRESS: {
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
 }
-
-// export const KASHI_ADDRESS = '0x2cBA6Ab6574646Badc84F0544d05059e57a5dc42'
 
 export const SOULSWAP_SWAPPER_ADDRESS: {
   [chainId in ChainId]: string
