@@ -31,7 +31,7 @@ class Edge {
     const pool = this.pool
     let out,
       gas = this.amountInPrevious ? 0 : this.GasConsumption
-    if (v == this.vert1) {
+    if (v === this.vert1) {
       if (this.direction) {
         if (amountIn < this.amountOutPrevious) {
           out =
@@ -42,7 +42,7 @@ class Edge {
             calcOutByIn(pool, amountIn - this.amountOutPrevious, false) +
             this.amountInPrevious
         }
-        if (amountIn == this.amountOutPrevious)
+        if (amountIn === this.amountOutPrevious)
           // TODO: accuracy?
           gas = -this.GasConsumption
       } else {
@@ -60,7 +60,7 @@ class Edge {
         const price = this.pool.token1.gasPrice / this.pool.token0.gasPrice
         console.assert(out < amountIn * price && out >= 0)
       } else {
-        if (amountIn == this.amountOutPrevious)
+        if (amountIn === this.amountOutPrevious)
           // TODO: accuracy?
           gas = -this.GasConsumption
         if (amountIn < this.amountOutPrevious) {
@@ -82,7 +82,7 @@ class Edge {
     from: Vertice,
     amountOut: number
   ): boolean {
-    if (from == this.vert0) {
+    if (from === this.vert0) {
       if (this.direction)
         return (
           this.pool.reserve1 - amountOut - this.amountOutPrevious <
@@ -115,8 +115,8 @@ class Edge {
       : -this.amountInPrevious
     const to = from.getNeibour(this)
     if (to) {
-      const inInc = from == this.vert0 ? from.bestIncome : -from.bestIncome
-      const outInc = from == this.vert0 ? to.bestIncome : -to.bestIncome
+      const inInc = from === this.vert0 ? from.bestIncome : -from.bestIncome
+      const outInc = from === this.vert0 ? to.bestIncome : -to.bestIncome
       const inNew = inPrev + inInc
       const outNew = outPrev + outInc
       console.assert(inNew * outNew >= 0)
@@ -169,7 +169,7 @@ class Vertice {
 
   getNeibour(e?: Edge) {
     if (!e) return
-    return e.vert0 == this ? e.vert1 : e.vert0
+    return e.vert0 === this ? e.vert1 : e.vert0
   }
 }
 
@@ -241,7 +241,7 @@ class Graph {
       })
 
       if (!closestVert) return
-      if (closestVert == finish) {
+      if (closestVert === finish) {
         const bestPath = []
         for (
           let v: Vertice | undefined = finish;
@@ -260,7 +260,7 @@ class Graph {
       nextVertList.splice(closestPosition, 1)
 
       closestVert.edges.forEach(e => {
-        const v2 = closestVert == e.vert0 ? e.vert1 : e.vert0
+        const v2 = closestVert === e.vert0 ? e.vert1 : e.vert0
         if (processedVert.has(v2)) return
         const [newIncome, gas] = e.calcOutput(
           closestVert as Vertice,
@@ -346,7 +346,7 @@ class Graph {
           const from = this.edgeFrom(e)
           return from ? [e, from[0], from[1]] : [e]
         })
-        .filter(e => e[1] == n)
+        .filter(e => e[1] === n)
 
       let outAmount = outEdges.reduce((a, b) => a + (b[2] as number), 0)
       if (outAmount <= 0) return
@@ -354,7 +354,7 @@ class Graph {
       const total = outAmount
       outEdges.forEach((e, i) => {
         const p = e[2] as number
-        const quantity = i + 1 == outEdges.length ? 1 : p / outAmount
+        const quantity = i + 1 === outEdges.length ? 1 : p / outAmount
         legs.push({
           address: (e[0] as Edge).pool.address,
           token: n.token,
@@ -369,7 +369,7 @@ class Graph {
   }
 
   edgeFrom(e: Edge): [Vertice, number] | undefined {
-    if (e.amountInPrevious == 0) return undefined
+    if (e.amountInPrevious === 0) return undefined
     return e.direction
       ? [e.vert0, e.amountInPrevious]
       : [e.vert1, e.amountOutPrevious]
@@ -379,7 +379,7 @@ class Graph {
     return v.edges.filter(e => {
       const from = this.edgeFrom(e)
       if (from === undefined) return false
-      return from[0] == v
+      return from[0] === v
     })
   }
 
@@ -388,7 +388,7 @@ class Graph {
     this.vertices.forEach(v => nodes.set(v.token.name, v))
     const sortOp = new TopologicalSort(nodes)
     this.edges.forEach(e => {
-      if (e.amountInPrevious == 0) return
+      if (e.amountInPrevious === 0) return
       if (e.direction) sortOp.addEdge(e.vert0.token.name, e.vert1.token.name)
       else sortOp.addEdge(e.vert1.token.name, e.vert0.token.name)
     })

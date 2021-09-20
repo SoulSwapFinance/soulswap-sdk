@@ -11,7 +11,7 @@ export function ConstantMeanDataFromParams(
   weight0: number,
   weight1: number
 ): ArrayBuffer {
-  console.assert(weight0 + weight1 == 100, 'Weight wrong')
+  console.assert(weight0 + weight1 === 100, 'Weight wrong')
   const data = new ArrayBuffer(16)
   const arr = new Uint8Array(data)
   arr[0] = weight0
@@ -33,10 +33,10 @@ export function HybridDataFromParams(A: number): ArrayBuffer {
 const DCache = new Map<Pool, number>()
 export function HybridComputeLiquidity(pool: Pool): number {
   const res = DCache.get(pool)
-  if (res != undefined) return res
+  if (res !== undefined) return res
 
   const s = pool.reserve0 + pool.reserve1
-  if (s == 0) {
+  if (s === 0) {
     DCache.set(pool, 0)
     return 0
   }
@@ -208,7 +208,7 @@ export function ASSERT(f: () => boolean, t: string) {
 }
 
 export function closeValues(a: number, b: number, accuracy: number): boolean {
-  if (a == 0 && b == 0) return true
+  if (a === 0 && b === 0) return true
   return Math.abs(a / b - 1) < accuracy
 }
 
@@ -247,7 +247,7 @@ export function revertPositive(
     while (max / min - 1 > 1e-4) {
       const x0: number = (min + max) / 2
       const y0 = f(x0)
-      if (out == y0) return x0
+      if (out === y0) return x0
       if (out < y0) max = x0
       else min = x0
     }

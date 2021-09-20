@@ -88,7 +88,7 @@ export const SEANCE_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
-  [ChainId.FANTOM]: '0x124B06C5ce47De7A6e9EFDA71a946717130079E6',
+  [ChainId.FANTOM]: '0x124B06C5ce47De7A6e9EFDA71a946717130079E6', // 28 AUG
   [ChainId.FANTOM_TESTNET]: '0xD54Cf31D5653F4a062f5DA4C83170A5867d04442', // 31 JUL
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
@@ -142,7 +142,7 @@ export const SOUL_SUMMONER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.RINKEBY]: '',
   [ChainId.GÖRLI]: '',
   [ChainId.KOVAN]: '',
-  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM]: '0xce6ccbB1EdAD497B4d53d829DF491aF70065AB5B', // 19 SEP
   [ChainId.FANTOM_TESTNET]: '0x0d36535b2666959a52c0c73CB940A59b1EbE9FD6', // 13 SEP
   [ChainId.MATIC]: '',
   [ChainId.MATIC_TESTNET]: '',
